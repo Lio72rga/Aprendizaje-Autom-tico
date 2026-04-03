@@ -1,0 +1,204 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #1c2324;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 28px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+/* HEADER */
+.header {
+    background-color: #1f4a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(216, 126, 126, 0.5), rgba(189, 223, 40, 0.5)),
+                url("https://images.unsplash.com/photo-1560185127-6a8c3d44f8aa");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #218838;
+}
+
+/* PROPIEDADES */
+.propiedades {
+    padding: 60px 0;
+    background-color: #f4f6f8;
+}
+
+.propiedades h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre-mi-texto {
+    flex: 1;
+}
+
+.sobre-mi-foto img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 60px 0;
+    background-color: #eaecea;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-contacto {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-contacto button {
+    background-color: #0b2c3d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-contacto button:hover {
+    background-color: #5b6c75;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}

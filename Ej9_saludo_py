@@ -1,0 +1,15 @@
+#Función de saludo personalizado
+#Escribe una función que reciba una cadena de texto representando
+# un nombre, y salude al usuario imprimiendo un mensaje en la
+# consola. Solicita un nombre al usuario y muestra el saludo 
+# utilizando la función.
+
+# Definir la función de saludo personalizado
+def saludo_personalizado(nombre):
+    print(f"Hola, {nombre}! Espero que tengas un excelente día.")
+
+# Solicitar un nombre al usuario
+nombre_usuario = input("Por favor, ingresa tu nombre: ")
+
+# Utilizar la función para mostrar el saludo
+saludo_personalizado(nombre_usuario)

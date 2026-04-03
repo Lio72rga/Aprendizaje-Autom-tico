@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(95, 233, 95, 1);
+    font-family: Arial, sans-serif;
+  }
+h1 {
+    color: rgba(16, 12, 238, 1);
+    text-align: center;
+  }
+p {
+  font-size: 25px;
+  color: rgba(15, 11, 29, 1);
+  margin: 10px;
+  }
